@@ -1,0 +1,122 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "app.money_task_kotlin"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    dataBinding{
+        enabled = true;
+    }
+
+    viewBinding.enabled = true
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.3.2'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+
+
+    def lifecycle_version = "2.2.0"
+    def retrofit2RxJava2AdapterVersion = '2.6.1'
+    def hilt_dagger = "1.0.0-alpha02"
+    def hilt_version = "2.28.3-alpha"
+
+    // todo google support library
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.legacy:legacy-support-v13:1.0.0'
+    implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
+
+
+    // todo  ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-livedata:$lifecycle_version"
+    implementation "android.arch.lifecycle:extensions:$lifecycle_version"
+    annotationProcessor "android.arch.lifecycle:compiler:$lifecycle_version"
+
+    // todo Retrofit
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.0'
+    implementation 'com.squareup.okio:okio:2.8.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.5.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.9.0'
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofit2RxJava2AdapterVersion"
+
+    // todo loader
+    implementation 'com.tuyenmonkey:mkloader:1.4.0'
+
+    // todo sdp for all size
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+
+    // todo Sweet dialog for showing toast
+    implementation 'com.github.f0ris.sweetalert:library:1.6.2'
+
+    // todo refresh layout
+    implementation 'com.baoyz.pullrefreshlayout:library:1.2.0'
+
+    // todo circle ImageView
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    // todo glide
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    // todo shimmer recyclerview
+    implementation 'com.facebook.shimmer:shimmer:0.4.0'
+    implementation 'com.todkars:shimmer-recyclerview:0.4.0'
+
+    // todo sdp ssp
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation 'com.intuit.ssp:ssp-android:1.0.6'
+
+    // todo Dagger - Hilt
+    implementation "com.google.dagger:hilt-android:$hilt_version"
+
+    // todo  Hilt - View Model
+    implementation "androidx.hilt:hilt-lifecycle-viewmodel:$hilt_dagger"
+
+    // todo Toast
+    implementation 'com.github.GrenderG:Toasty:1.5.0'
+
+    // todo Material Edittext
+    implementation 'com.rengwuxian.materialedittext:library:2.1.4'
+
+}

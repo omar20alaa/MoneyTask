@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">MoneyAppTask</string>
+    <string name="budget">My Budget</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, adi piscing elit.Aenean commodo ligula eget dolor. Aenean massa.
+        Cum so Lorem ipsum dolor sit amet, adi piscing elit.Aenean commodo ligula eget dolor. Aenean massa. Cum sociisnatoquepenatibus et magn is dis
+        Lorem ipsum dolor sit amet, adi piscing elit.Aenean commodo ligula eget dolor. Aenean massa.
+        Cum so Lorem ipsum dolor sit amet, adi piscing elit.Aenean commodo ligula eget dolor. Aenean massa. Cum sociisnatoquepenatibus et magn is dis .
+        Lorem ipsum dolor sit amet, adi piscing elit.Aenean commodo ligula eget dolor. Aenean massa.
+        Cum so Lorem ipsum dolor sit amet, adi piscing elit.Aenean commodo ligula eget dolor. Aenean massa. Cum sociisnatoquepenatibus et magn is dis .
+        Lorem ipsum dolor sit amet, adi piscing elit.Aenean commodo ligula eget dolor. Aenean massa.
+        Cum so Lorem ipsum dolor sit amet, adi piscing elit.Aenean commodo ligula eget dolor. Aenean massa. Cum sociisnatoquepenatibus et magn is dis .
+        Lorem ipsum dolor sit amet, adi piscing elit.Aenean commodo ligula eget dolor. Aenean massa.
+        Cum so Lorem ipsum dolor sit amet, adi piscing elit.Aenean commodo ligula eget dolor. Aenean massa. Cum sociisnatoquepenatibus et magn is dis .
+        Lorem ipsum dolor sit amet, adi piscing elit.Aenean commodo ligula eget dolor. Aenean massa.
+        Cum so Lorem ipsum dolor sit amet, adi piscing elit.Aenean commodo ligula eget dolor. Aenean massa. Cum sociisnatoquepenatibus et magn is dis ..</string>
+    <string name="Loading">Loading</string>
+    <string name="accounts">Accounts</string>
+    <string name="add_acc">Add new account</string>
+    <string name="payee">payee</string>
+    <string name="last_modified_on">Last modified on : </string>
+    <string name="first_month">First month : </string>
+    <string name="last_month">Last month : </string>
+    <string name="currency">Currency : </string>
+    <string name="name">Name : </string>
+    <string name="add_name">Name</string>
+    <string name="type">Type</string>
+    <string name="balance">Balance</string>
+    <string name="try_again">Please try again</string>
+    <string name="created">Account Created Successfully</string>
+    <string name="enter_name">Please Enter name</string>
+    <string name="enter_type">Please Enter type</string>
+    <string name="enter_balance">Please Enter balance</string>
+</resources>

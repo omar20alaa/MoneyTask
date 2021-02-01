@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    android:scrollbars="none">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/image_logo"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:src="@drawable/splash_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/constrain_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:background="@color/white"
+            android:elevation="@dimen/_4sdp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/_4sdp"
+            app:cardElevation="@dimen/_4sdp"
+            app:layout_constraintEnd_toEndOf="@id/image_logo"
+            app:layout_constraintStart_toStartOf="@+id/image_logo"
+            app:layout_constraintTop_toBottomOf="@+id/image_logo">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/linear_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_50sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:background="@drawable/rounded_et"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_4sdp"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/et_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/add_name"
+                        android:inputType="textEmailAddress"
+                        android:textAppearance="@style/EditTex"
+                        android:textColorHint="@color/hint"
+                        app:met_floatingLabelTextColor="@color/purple_700"
+                        app:met_hideUnderline="true"
+                        app:met_textColorHint="@color/hint" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:background="@drawable/rounded_et"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_4sdp"
+                    app:layout_constraintStart_toStartOf="@+id/linear_name"
+                    app:layout_constraintTop_toBottomOf="@+id/linear_name">
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/et_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:hint="@string/type"
+                        android:inputType="textEmailAddress"
+                        android:padding="@dimen/_4sdp"
+                        android:textAppearance="@style/EditTex"
+                        android:textColorHint="@color/hint"
+                        app:met_floatingLabelTextColor="@color/purple_700"
+                        app:met_hideUnderline="true"
+                        app:met_textColorHint="@color/hint" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_msg_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:background="@drawable/rounded_et"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_4sdp"
+                    app:layout_constraintEnd_toEndOf="@+id/linear_email"
+                    app:layout_constraintStart_toStartOf="@+id/linear_email"
+                    app:layout_constraintTop_toBottomOf="@+id/linear_email">
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/et_balance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/balance"
+                        android:inputType="number"
+                        android:textAppearance="@style/EditTex"
+                        android:textColorHint="@color/hint"
+                        app:met_floatingLabelTextColor="@color/purple_700"
+                        app:met_hideUnderline="true"
+                        app:met_textColorHint="@color/hint" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/btn_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:layout_marginBottom="?attr/actionBarSize"
+                    android:background="@drawable/rounded_view"
+                    android:backgroundTint="@color/purple_700"
+                    android:gravity="center"
+                    android:padding="@dimen/_8sdp"
+                    android:text="@string/add_acc"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/linear_msg_title"
+                    app:layout_constraintStart_toStartOf="@+id/linear_msg_title"
+                    app:layout_constraintTop_toBottomOf="@+id/linear_msg_title" />
+
+                <include
+                    android:id="@+id/loading_layout"
+                    layout="@layout/progress_loading" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
